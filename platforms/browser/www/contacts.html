@@ -1,0 +1,92 @@
+<div class="page" data-page='contacts'>
+    <div class="navbar">
+	  <div class="navbar-inner">
+		<div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+		<div class="center sliding">CONTACTS</div>
+		<div class="right">
+		  <!-- Right link contains only icon - additional "icon-only" class-->
+		  
+		  <a href="#" data-popover=".popover-menu" class="open-popover link icon-only"><i class="fa fa-cog"></i></a>		  
+		</div>
+	  </div>		  
+	</div> 
+	
+	<!--form data-search-list=".list-block-search" data-search-in=".item-title" class="searchbar searchbar-init searchbar-active" id="searchform">
+		<div class="searchbar-input">
+		  <input type="search" placeholder="Enter Name" onkeypress="searchtext()" id="search" name="searchtxt" class="srch"><a href="#" class="searchbar-clear" id="search-text" onclick="hideme()"></a>
+		</div><a href="#" class="searchbar-cancel">Cancel</a>
+    </form-->
+	
+	<!-- Search Bar -->
+ <form data-search-list=".list-block-search" data-search-in=".item-title" class="searchbar searchbar-init searchbar-active" id="searchform">
+   <div class="searchbar-input">
+     <input type="search" placeholder="Search"><a href="#" class="searchbar-clear" id="search-text" onclick="hideme()"></a>
+   </div><a href="#" class="searchbar-cancel">Cancel</a>
+ </form>
+
+ <!-- Search Bar overlay -->
+ <div class="searchbar-overlay"></div>
+	
+
+                <div class="toolbar toolbar-bottom">
+                   <div class="toolbar-inner">
+                       <a href="#" class="link" onclick="showsearchbar()"><i class="fa fa-search center"><br><span class="fnt">Search</span></i></a>
+                       <a href="#" class="link" onclick="contactentry()"><i class="fa fa-plus center"><br><span class="fnt">New</span></i></a>
+                       <a href="#" class="link" id=""><i class="fa fa-trash center"><br><span class="fnt">Delete</span></i></a>
+                   </div>
+               </div>
+	
+    <div class="page-content contlist">
+	<div class="list-block list-block-search searchbar-found">
+	<ul>
+		<div id="contacts"></div>
+	</ul>
+	</div>
+        <!--<div class="list-block">
+		  <ul>
+			<li>
+			  <a href="#" class="item-link item-content contacts-list">
+				<div class="item-media"><div class="item-media"><img src="img/cuty1.jpg" width="44"></div></i></div>
+				<div class="item-inner">
+				  <div class="item-title ttl">Item title</div>
+				  <div class="item-after"></div>
+				</div>
+			  </a>
+			</li>
+			<li>
+				<a href="#" class="item-link item-content contacts-list">
+				<div class="item-media"><div class="item-media"><img src="img/cuty2.jpg" width="44"></div></i></div>
+				<div class="item-inner">
+				  <div class="item-title ttl">Item title</div>
+				  <div class="item-after"></div>
+				</div>
+				</a>
+			</li>
+			<li>
+			   <a href="#" class="item-link item-content contacts-list">
+				<div class="item-media"><div class="item-media"><img src="img/cuty4.jpg" width="44"></div></i></div>
+				<div class="item-inner">
+				  <div class="item-title ttl">Item title</div>
+				  <div class="item-after"></div>
+				</div>
+			  </a>
+			</li>
+		  </ul>
+		  
+		</div>-->
+		<!--a href="#" class="open-popup link floating-button color-blue" onclick="contactentry()"><i class="icon icon-plus"></i></a-->
+	</div> 
+					   
+	<div class="popover popover-menu">
+		<div class="popover-inner">
+			<div class="list-block">
+			  <ul>
+				<!--li><a href="profile.html" class="list-button item-link close-popover">My Profile</a></li>
+				<li><a href="myorder.html" class="list-button item-link close-popover">My Order</a></li>
+				<li><a href="changepassword.html" class="list-button item-link close-popover">Change Password</a></li-->
+				<li><a onclick="getlogout()" class="list-button item-link close-popover">Logout</a></li>
+			  </ul>
+		    </div>
+		</div>
+	</div>
+</div>
